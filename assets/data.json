@@ -1,0 +1,481 @@
+{ 
+  "exercises": [ 
+    {
+      "id": "1",
+      "description": "Kneeling Hamstring Stretch",
+      "instruction": ["Im Ausfallschritt, hinteres Knie auf dem Boden", "Vorderes Knie leicht gebeugt, Ferse auf dem Boden", "Oberkörper nach vorn gebeugt", "Händer am Fuß, Rücken gerade"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Hamstrings"]
+    }, 
+    {
+      "id": "2",
+      "description": "Hamstrins Stretch",
+      "instruction": ["Sitzende Position, Beine parallel und gestreckt","Rücken nach vorn gerundet und entspannt", "Füße greifen"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Hamstrings", "Lumbar muscles"]
+    },
+    {
+      "id": "3",
+      "description": "Pigeon",
+      "instruction": ["Im Ausfallschritt, hinteres Knie am Boden","Außenseite des vorderen Fußed und Knies auf dem Boden ablegen", "Minimale Beugung im hinteren Knie"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus":  ["Glutes", "Hips", "Lumbar muscles"]
+    },
+    {
+      "id": "4",
+      "description": "Seated Piriformis Stretch",
+      "instruction": ["Sitzende Position, Beine parallel und gestreckt","Ein Bein überschlagen, den Fuß flach aufgestellen", "Knie zur gegenüberliegenden Schulter ziehen", "Rücken gerade, Oberkörper zum übergeschlagenen Bein gerichtet"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Glutes", "Hips", "Lumbar muscles"]
+    },
+    {
+      "id": "5",
+      "description": "Standing Forward Bend",
+      "instruction": ["Stehende Position, Beine gestreckt","Rücken nach vorn gebogen", "Arme hängen locker zum Boden"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Lumbar muscles", "Hamstrings", "Traps", "Calves"]
+    },
+        {
+      "id": "6",
+      "description": "Knight to Hamstring Stretch",
+      "instruction": ["Raumgreifender Lunge, hinteres Knie am Boden, Oberkörper in Phase 1 aufrecht", "Vorderes Bein gestreckt, Oberkörper lehnt sich in Phase 2 zum vorderen Fuß hin", "Langsamer und kontrollierter Rhythmus, Rücken bleibt gerade"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Hamstrings", "Hips"]
+    },
+    {
+      "id": "7",
+      "description": "Wall Candle",
+      "instruction": ["Po auf dem Boden und an der Wand, Beine an der Wand ausgestreckt","Zehen nach unten ziehen", "Arme im 90° Winkel zur Seite, Handflächen zeigen nach oben"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "true",
+      "stimulus": ["Lumbar muscles", "Hamstrings"]
+    },
+    {
+      "id": "8",
+      "description": "Wall Hinge",
+      "instruction": ["Eine Armlänge entfernt mit dem Blick zu Wand stellen","Hände flach an der Wand","Arme und Beine angespannt und gestreckt, das Becken nach hinten schieben", "Natürliche Wölbung der Lendenwirbelsäule beibehalten"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "true",
+      "stimulus": ["Shoulder", "Traps", "Lats", "Hamstrings"]
+    },
+    {
+      "id": "9",
+      "description": "Wall V Stretch",
+      "instruction": ["Po auf dem Boden und an der Wand","Beine an der Wand völlig gestreckt und gespreizt", "Der Kopf liegt auf dem Boden"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "true",
+      "stimulus": ["Adductors", "Hamstrings"]
+    },
+    {
+      "id": "10",
+      "description": "Breakdancer",
+      "instruction": ["Sitzende Position, Bein ist flach ausgestreckt","Der Fuß des anderen Beins liegt am Oberschenkel an", "Nach vorn beugen und den Fuß des gestreckten Beines fassen"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Hamstrings", "Calves", "Lumbar muscles"]
+    },
+    {
+      "id": "11",
+      "description": "Squat to Stand",
+      "instruction": ["Position 1: Gewicht auf den Fersen, Brustkorb gerade, tiefe Squatposition","Position 2: Beine gestreckt, Rücken gerundet", "Die Finger bleiben unter den Zehen"],
+      "duration": [60, 120],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Hamstrings", "Lumbar muscles", "Hips"]
+    },
+    {
+      "id": "12",
+      "description": "Half Lotus on Wall",
+      "instruction": ["In Rückenlage, der andere Fuß flach an der Wand, das Knie gebeugt","Knöchel des fußes liegt auf dem Knie, die Hüfte nahe an der Wand", "die Hand derselben Seite drückt das Knie zur Wand"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "true",
+      "stimulus": ["Glutes", "Lumbar muscles", "Hips"]
+    },
+    {
+      "id": "13",
+      "description": "Downward Facing Dog",
+      "instruction": ["Fersen auf dem Boden","Rücken gerade", "Hände auf dem Boden, Kopf in einer Linie mit dem Oberkörper"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Hamstrings", "Lumbar muscles", "Calves"]
+    },
+    {
+      "id": "14",
+      "description": "Downward Facing Dog to Cobra",
+      "instruction": ["In Phase 1 Füße und Händer auf dem Boden, Beine gestreckt", "In Phase 2 auf den Boden legen, Brustkorb nach oben", "Langsamer und kontrollierte Bewegung"],
+      "duration": [60, 120],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Lumbar muscles", "Abs", "Hamstrings"]
+    },
+    {
+      "id": "15",
+      "description": "Armless Prayer",
+      "instruction": ["Auf dem Boden kniend, Oberkörper senkt sich gegen den Boden","Arme gestreckt, dann angewinkelt. Der Kopf ist in der Verlängerung des Oberörpers", "Ellenbogen gebeugt, Handflächen auf den Rücken gelegt"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Shoulder", "Traps", "Lats"]
+    },
+    {
+      "id": "16",
+      "description": "Back Stretch",
+      "instruction": ["Auf dem Boden sitzen, die Fußsohlen aneinander" ,"Arme greifen von innen her unter den Beinen durch nach den Knöcheln", "Rücken und Kopf ganz nach vorn einrollen"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Traps", "Lumbar muscles"]
+    },
+    {
+      "id": "17",
+      "description": "Cat and Cow",
+      "instruction": ["Im Vierfüßlerstand, Schultern über den Handgelenken","Langsame und kontrollierte Beuge und Streckbewegung des Rumpfes"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Traps", "Lumbar muscles"]
+    },
+    {
+      "id": "18",
+      "description": "Thread the Needle",
+      "instruction": ["Auf den Knien, Schultern entspannt, der Oberkörper ist zur Seite gedreht, der Arm wird unter die andere Achsel geführt","Der andere Arm ist auf dem Boden ausgestreckt, die Handfläche zeigt nach oben", "Die Hand so weit entfernt wie möglich, Schulter auf dem Boden"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Shoulder", "Lats"]
+    },
+    {
+      "id": "19",
+      "description": "Overhead Squat on Wall",
+      "instruction": ["In Rückenlage mit den Füßen zur Wand","Füße flach gegen die Wand stellen, in tiefer Squat Position", "Arme neben dem Kopf flach auf dem Boden ausgestreckt"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "true",
+      "stimulus": ["Shoulder", "Hips", "Pecs"]
+    },
+    {
+      "id": "20",
+      "description": "Pec Sretch on the Ground",
+      "instruction": ["In Bauchlage, beide Arme zur Seite ausgebreitet","Mit der Hand gegen den Boden stützen, um den Körper zu drehen. Das Bein hnter der Hüfte abstellen", "Gestreckter Arm bleibt flach auf dem Boden"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Pecs", "Shoulder"]
+    },
+    {
+      "id": "21",
+      "description": "Prayer Lat Stretch",
+      "instruction": ["auf den Knien, Arme nach vorn gestreckt", "Hände flach auf dem Boden", "Arme zu einer Seite führen, während das Becken unverändert bleibt"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Shoulder", "Lats"]
+    },
+    {
+      "id": "22",
+      "description": "Wall Twist",
+      "instruction": ["Tiefe Squat Position mit dem Rücken an der Wand", "Arm und Handfläche gegen die Wand drücken, den Oberkörper dabei leicht drehen", "Arm und Oberkörper gerade halten"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "true",
+      "stimulus": ["Shoulder", "Pecs", "Hips"]
+    },
+    {
+      "id": "23",
+      "description": "The Book",
+      "instruction": ["In Seitenlage, Hüfte und Knie um 90°C gebeugt", "Beide Arme zur Seite gestreckt, Handflächen übereinander", "Oberkörper zur anderen Seite drehen, den oberen Arm gestreckt mitnehmen."],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Lumbar muscles"]
+    },
+    {
+      "id": "24",
+      "description": "The Sagittarius",
+      "instruction": ["In Seitenlage, Hüfte und Knie um 90°C gebeugt","Knie festhalten, anderes Bein gestreckt in einer Linie mit dem Kopf", "Anderer Arm entspannt, Schulter auf dem Boden"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Lumbar muscles", "Pecs"]
+    },
+    {
+      "id": "25",
+      "description": "Butterfly",
+      "instruction": ["Sitzende Position, die Fußsohlen aneinander" ,"Knie nach außen und unten drücken", "Rücken gerade"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Adductors", "Hips"]
+    },
+    {
+      "id": "26",
+      "description": "Quad Stretch",
+      "instruction": ["Mit dem Rücken zur Wand, ein Knie gebeugt am Boden nah der Wand", "Hinterer Fuß an der Wand", "Oberkörper aufrecht, vorderes Bein im rechten Winkel, Fuß flach am Boden"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "true",
+      "stimulus": ["Quad"]
+    },
+    {
+      "id": "27",
+      "description": "The Ballerina",
+      "instruction": ["Im weiten Ausfallschritt, hinteres Knie am Boden.", "Becken nah am Boden", "Hinteres Bein rechtwinklig zur Körperlängsachse"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Adductors", "Hips"]
+    },
+    {
+      "id": "28",
+      "description": "The Frog",
+      "instruction": ["Knie auf dem Boden, so weit wie möglich voneinander entfernt", "Becken so nah wie möglich am Boden", "Ellenbogen auf dem Boden"],
+      "duration": [120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Adductors", "Hips"]
+    },
+    {
+      "id": "29",
+      "description": "Wall Butterfly",
+      "instruction": ["Der Po am Boden und an der Wand","Füße an der Wand, die Fußsohlen aneinander", "Knie drücken nach außen"],
+      "duration": [120, 180],
+      "double": "false",
+      "equipped": "true",
+      "stimulus": ["Adductors", "Hips"]
+    },
+    {
+      "id": "30",
+      "description": "Forearm Stretch",
+      "instruction": ["Im Vierfüßlerstand, Hände flach auf dem Boden", "Die Finger zeigen zum Körper, Arme gestreckt", "Schultern hinter den Handgelenken"],
+      "duration": [60],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Flexors"]
+    },
+    {
+      "id": "31",
+      "description": "Half Kneeling Quad Stretch",
+      "instruction": ["Stzende Position, Beine gestreckt. Das Bein anwinkeln, der Fuß bleibt in natürlicher Position", "Anderes Bein gestreckt", "rückenlage auf dem Boden"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Quad", "Hips"]
+    },
+    {
+      "id": "32",
+      "description": "Standing V Stetch",
+      "instruction": ["In stehender Position, Füße weit auseinander", "Brustkorb nach vorn gebeugt", "Ellenbogen auf dem Boden"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Adductors"]
+    },
+    {
+      "id": "33",
+      "description": "The Prayer",
+      "instruction": ["Po auf den Fersen, die Arme nach vorn gestreckt", "Hände auf dem Boden", "Der Kopf bleibt neutral"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Shoulder", "Traps", "Lats"]
+    },
+    {
+      "id": "34",
+      "description": "Twisted Hip Opener",
+      "instruction": ["Im weiten Ausfallschritt, hinteres Knie am Boden", "Das hintere Knie beugen, so dass der Fuß hoch kommt", "Gegenüberliegende Hand greift den hinteren Fuß"],
+      "duration": [60],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Quad", "Hips"]
+    },
+    {
+      "id": "35",
+      "description": "Bottom Squat",
+      "instruction": ["Tiefe Squat Position", "Unterer Rücken entspannt", "Natürlicher Abstand zwischen den Füßen"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Hips", "Glutes"]
+    },
+    {
+      "id": "36",
+      "description": "V Sit",
+      "instruction": ["Auf dem Boden sitzende Position, die Beine so weit wie möglich gegrätscht","Rücken nach vorn gerundet", "Brust so nah wie möglich am Boden"],
+      "duration": [120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Adductors", "Hips", "Hamstrings"]
+    },
+    {
+      "id": "37",
+      "description": "Lizard Pose",
+      "instruction": ["Im weiten Ausfallschritt, Po und Rumpf angespant","Ellenbogen der selben Seite geht neben dem vorderen Knöchel auf den Boden"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Hips", "Adductors"]
+    },
+    {
+      "id": "38",
+      "description": "Relax",
+      "instruction": ["In Rückenlage, entspannt", "Tief Ein- und Ausatmen"],
+      "duration": [60],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": []
+    },
+    {
+      "id": "39",
+      "description": "Medium Pec Stretch",
+      "instruction": ["Ellenbogen in Höhe der Nase an der Wand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen Schritt nach vorn gestellt"],
+      "duration": [60],
+      "double": "true",
+      "equipped": "true",
+      "stimulus": ["Pecs", "Shoulder"]
+    },
+    {
+      "id": "40",
+      "description": "Turn Back Stretch",
+      "instruction": ["Handfläche flach an die Wand drücken", "Der Arm ist gestreckt", "Füße und Kopf von der Wand wegdrehen"],
+      "duration": [60],
+      "double": "true",
+      "equipped": "true",
+      "stimulus": ["Pecs", "Biceps", "Shoulder"]
+    },
+    {
+      "id": "41",
+      "description": "Squat Opener",
+      "instruction": ["Füße stehen in Schulterbreite parallel", "Tiefe Squat Position, die Ellenbogen an der Innenseite der Knie", "Knie nach außen drücken, der Oberkörper bleibt aufrecht"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Hips", "Glutes", "Lumbar muscles"]
+    },
+    {
+      "id": "42",
+      "description": "Self Hug Stretch",
+      "instruction": ["Gegenüberliegende Hand zieht den Ellenbogen von außen heran", "Oberkörper gerade", "Bauchmuskulatur angespannt"],
+      "duration": [60],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Traps", "Shoulder"]
+    },
+    {
+      "id": "43",
+      "description": "Hip Circles",
+      "instruction": ["Im aufrechten Stand ein Knie beugen und anheben, bis der Oberschenkel parallel zum Boden ist", "Das Knie vom Körper weg zur Seite drehen, dann den Fuß zurück zum Boden", "Seite wechseln"],
+      "duration": [60, 120],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Hips"]
+    },
+    {
+      "id": "44",
+      "description": "Hip Stretch",
+      "instruction": ["Im weiten Ausfallschritt die gleiche Hand nach oben ausstrecken", "Hüfte leicht nach vorne schieben", "Leichte Beugung des Rumpfes zur anderen Seite"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Hips", "Lats"]
+    },
+    {
+      "id": "45",
+      "description": "Scapula Mobilisation",
+      "instruction": ["Vierfüßlerstand, Hande flach am Boden", "Arme gestreckt", "Brust zwischen den Schultern nach oben und unten schieben"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Shoulder", "Rotators"]
+    },
+    {
+      "id": "46",
+      "description": "Resting Cossack Squat",
+      "instruction": ["Fuß flach am Boden, tiefe Hochposition", "Anderes Bein gestreckt", "Zehen zeigen nach oben"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Adductors"]
+    },
+    {
+      "id": "47",
+      "description": "Manual Forearm Stretch",
+      "instruction": ["Arn gestrecktm Handfläche nach vorn", "Finger zeigen nach unten", "Die andere Hand hält alle Finger außer den Daumen fest"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Flexors"]
+    },
+    {
+      "id": "48",
+      "description": "Lower Pec Stretch",
+      "instruction": ["Paralleler Stand zur Wand, Ellenbogen in Schulterhöhe an der Wand", "Handfläche flach an der Wand", "Füße und Kopf zur anderen Seite drehen"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "true",
+      "stimulus": ["Pecs", "Shoulder"]
+    },
+    {
+      "id": "49",
+      "description": "Ankle Mobilisation",
+      "instruction": ["Vorderer Fuß flach aufgesetzt, hinteres Knie auf dem Boden", "Führe deine Brust zum Knie", "Bewegung vor und zurück, Gewicht auf dem Sprunggelenk"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Ankles"]
+    },
+    {
+      "id": "50",
+      "description": "Active Finger Stretch",
+      "instruction": ["Im Vierfüßlerstand, Hände flach auf dem Boden", "Den Oberkörper nach vorn schieben, so dass die Handballen abheben", "Die Finger bleiben auf dem Boden, langsame und kontrollierte Bewegungen"],
+      "duration": [60, 120, 180],
+      "double": "false",
+      "equipped": "false",
+      "stimulus": ["Flexors", "Extensors"]
+    },
+    {
+      "id": "51",
+      "description": "Manual Trizeps Stretch",
+      "instruction": ["Hand flach auf dem Rücken, so tief wie möglich", "Die andere Hand zieht den Ellenbogen nach innen und hinten", "Bauchmuskeln angespannt"],
+      "duration": [60, 120, 180],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Trizeps", "Lats", "Shoulder"]
+    },
+    {
+      "id": "52",
+      "description": "Neck Stretch",
+      "instruction": ["Aurechter Sitz, der Nacken wird zur anderen Seite gebeugt", "Rücken bleibt gerade, Kinn neutral", "Der Arm wird nach unten ausgestreckt, die Schulter bleibt unten"],
+      "duration": [60, 120],
+      "double": "true",
+      "equipped": "false",
+      "stimulus": ["Shoulder", "Neck"]
+    },
+    {
+      "id": "53",
+      "description": "Upper Pec Stretch",
+      "instruction": ["Im parallelen Stand zur Wand Ellenbogen in Stirnhöhe an die Wand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen Schritt nach vorn gestellt"],
+      "duration": [60, 120, 180],
+      "double": "truee",
+      "equipped": "true",
+      "stimulus": ["Shoulder", "Pecs"]
+    }
+  ]
+}
