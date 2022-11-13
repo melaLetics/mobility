@@ -34,7 +34,7 @@ class App extends StatelessWidget {
         scaffoldBackgroundColor: Color.fromARGB(255, 16, 20, 17),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
-            foregroundColor: MaterialStateProperty.all(Colors.black),
+            foregroundColor: MaterialStateProperty.all(Colors.grey),
             backgroundColor: MaterialStateProperty.all(colorCustom),
           ),
         ),

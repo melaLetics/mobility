@@ -1,7 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
+
 import 'package:mobility/screens/routine_screen.dart';
+import 'package:mobility/widgets/session_duration_button.dart';
 
 class SetupScreen extends StatefulWidget {
   const SetupScreen({super.key});
@@ -30,7 +30,12 @@ class SetupScreenState extends State<SetupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Daily Mobility'),
+        title: const Text('Daily Mobility',
+            style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Colors.grey,
+            )),
         centerTitle: true,
       ),
       body: Column(
@@ -44,9 +49,8 @@ class SetupScreenState extends State<SetupScreen> {
               'Wähle die Länge deiner Session',
               style: TextStyle(
                 fontFamily: 'LucidaConsole',
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+                color: Colors.grey,
+                fontSize: 25,
               ),
             )),
           ),
@@ -55,24 +59,11 @@ class SetupScreenState extends State<SetupScreen> {
             child: SizedBox(
               width: MediaQuery.of(context).size.width * 0.9,
               height: 80,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Theme.of(context).colorScheme.secondary,
-                ),
-                onPressed: () {
-                  setState(() {
-                    duration = 10;
-                  });
-                },
-                child: const Text(
-                  '10 Minuten',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
+              child: SessionDurationButton('10 Minuten', duration == 10, (_) {
+                setState(() {
+                  duration = 10;
+                });
+              }),
             ),
           ),
           const SizedBox(height: 25),
@@ -80,50 +71,23 @@ class SetupScreenState extends State<SetupScreen> {
             child: SizedBox(
               width: MediaQuery.of(context).size.width * 0.9,
               height: 80,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Theme.of(context).colorScheme.secondary,
-                ),
-                onPressed: () {
-                  setState(() {
-                    duration = 20;
-                  });
-                },
-                child: const Text(
-                  '20 Minuten',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
+              child: SessionDurationButton('20 Minuten', duration == 20, (_) {
+                setState(() {
+                  duration = 20;
+                });
+              }),
             ),
           ),
           const SizedBox(height: 25),
           Center(
             child: SizedBox(
-              width: MediaQuery.of(context).size.width * 0.9,
-              height: 80,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Theme.of(context).colorScheme.secondary,
-                ),
-                onPressed: () {
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: 80,
+                child: SessionDurationButton('30 Minuten', duration == 30, (_) {
                   setState(() {
                     duration = 30;
                   });
-                },
-                child: const Text(
-                  '30 Minuten',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
+                })),
           ),
           const SizedBox(height: 50),
           Row(
@@ -138,8 +102,8 @@ class SetupScreenState extends State<SetupScreen> {
                 child: Text(
                   'Freie Wand verfügbar',
                   style: TextStyle(
+                    color: Colors.grey,
                     fontSize: 25,
-                    color: Colors.white,
                   ),
                 ),
               ),
@@ -150,6 +114,7 @@ class SetupScreenState extends State<SetupScreen> {
                   child: Checkbox(
                     value: equipped,
                     onChanged: (value) => _toggle(value),
+                    hoverColor: Colors.white,
                     activeColor: Theme.of(context).colorScheme.secondary,
                     checkColor: Colors.black,
                   ),
@@ -181,7 +146,6 @@ class SetupScreenState extends State<SetupScreen> {
                 child: const Text(
                   'Starte Session',
                   style: TextStyle(
-                    color: Colors.white,
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
