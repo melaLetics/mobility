@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobility/helper/parse_exercises.dart';
 
 import 'package:mobility/screens/routine_screen.dart';
 import 'package:mobility/widgets/session_duration_button.dart';
@@ -136,10 +137,11 @@ class SetupScreenState extends State<SetupScreen> {
                   primary: Theme.of(context).colorScheme.secondary,
                 ),
                 onPressed: () {
+                  ParseExercises().printData();
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const RoutineScreen(),
+                      builder: (context) => RoutineScreen(duration, equipped),
                     ),
                   );
                 },

@@ -42,7 +42,6 @@ class App extends StatelessWidget {
       home: const SetupScreen(),
       routes: {
         SetupScreen.routeName: (ctx) => const SetupScreen(),
-        RoutineScreen.routeName: (ctx) => const RoutineScreen(),
       },
     );
   }

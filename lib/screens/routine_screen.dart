@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class RoutineScreen extends StatelessWidget {
-  const RoutineScreen({super.key});
-
   static const routeName = '/routine';
+  final int duration;
+  final bool equipped;
+
+  const RoutineScreen(this.duration, this.equipped, {super.key});
 
   @override
   Widget build(BuildContext context) {
