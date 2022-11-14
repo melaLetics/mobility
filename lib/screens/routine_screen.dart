@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:mobility/model/exercise.dart';
 
 class RoutineScreen extends StatelessWidget {
   static const routeName = '/routine';
-  final int duration;
-  final bool equipped;
+  final List<Exercise> exercises;
 
-  const RoutineScreen(this.duration, this.equipped, {super.key});
+  const RoutineScreen(this.exercises, {super.key});
 
   @override
   Widget build(BuildContext context) {

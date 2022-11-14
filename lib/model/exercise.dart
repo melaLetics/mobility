@@ -1,19 +1,19 @@
 class Exercise {
-  String? id;
-  String? description;
-  List<String>? instruction;
-  List<int>? duration;
-  String? double;
-  String? equipped;
+  String id = "";
+  String description = "";
+  List<String> instruction = [];
+  List<int> duration = [];
+  bool double = false;
+  bool equipped = false;
   List<String>? stimulus;
 
   Exercise(
-      {this.id,
-      this.description,
-      this.instruction,
-      this.duration,
-      this.double,
-      this.equipped,
+      {required this.id,
+      required this.description,
+      required this.instruction,
+      required this.duration,
+      required this.double,
+      required this.equipped,
       this.stimulus});
 
   Exercise.fromJson(Map<String, dynamic> json) {
@@ -21,8 +21,8 @@ class Exercise {
     description = json['description'];
     instruction = json['instruction'].cast<String>();
     duration = json['duration'].cast<int>();
-    double = json['double'];
-    equipped = json['equipped'];
+    double = json['double'] == 'true' ? true : false;
+    equipped = json['equipped'] == 'true' ? true : false;
     stimulus = json['stimulus'].cast<String>();
   }
 

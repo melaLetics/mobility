@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobility/helper/parse_exercises.dart';
 
+import 'package:mobility/model/exercise.dart';
 import 'package:mobility/screens/routine_screen.dart';
 import 'package:mobility/widgets/session_duration_button.dart';
 
@@ -15,6 +16,8 @@ class SetupScreen extends StatefulWidget {
 class SetupScreenState extends State<SetupScreen> {
   int duration = 10;
   bool equipped = true;
+  List<Exercise> exercises = [];
+  List<Exercise> routine = [];
 
   _toggle(value) {
     setState(() {
@@ -137,10 +140,11 @@ class SetupScreenState extends State<SetupScreen> {
                   primary: Theme.of(context).colorScheme.secondary,
                 ),
                 onPressed: () {
+                  ParseExercises().getRoutine(duration, equipped);
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => RoutineScreen(duration, equipped),
+                      builder: (context) => RoutineScreen(routine),
                     ),
                   );
                 },
