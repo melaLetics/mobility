@@ -139,14 +139,20 @@ class SetupScreenState extends State<SetupScreen> {
                 style: ElevatedButton.styleFrom(
                   primary: Theme.of(context).colorScheme.secondary,
                 ),
-                onPressed: () {
-                  ParseExercises().getRoutine(duration, equipped);
+                onPressed: () async {
+                  List<Exercise> routine =
+                      await ParseExercises().getRoutine(duration, equipped);
+                  routine.sort((a, b) {
+                    return a.order.compareTo(b.order);
+                  });
+                  /*
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => RoutineScreen(routine),
                     ),
                   );
+                  */
                 },
                 child: const Text(
                   'Starte Session',

@@ -26,8 +26,12 @@ class ParseExercises {
     }
 
     do {
-      Exercise ex = getRandomExercise(exercises);
-      int randomDur = getDuration(ex.duration);
+      Exercise ex = duration - sum > 1
+          ? getRandomExercise(exercises, routine)
+          : getRandomExercise(
+              exercises.where((elem) => elem.double == false).toList(),
+              routine);
+      int randomDur = getDuration(ex.duration, duration, sum);
       ex.duration = [];
       ex.duration.add(randomDur);
       if (ex.double) {
@@ -37,7 +41,8 @@ class ParseExercises {
             instruction: ex.instruction,
             duration: ex.duration,
             double: ex.double,
-            equipped: ex.equipped);
+            equipped: ex.equipped,
+            stimulus: ex.stimulus);
         routine.add(copy);
         sum += (randomDur / 60);
         ex.description = "${ex.description} Right";
@@ -47,24 +52,40 @@ class ParseExercises {
       sum += (randomDur / 60);
     } while (sum < duration);
 
-    for (var elem in routine) {
-      print(elem.description);
-    }
-
-    return routine;
+    return sortOrder(routine);
   }
 
-  int getDuration(List<int> duration) {
+  int getDuration(List<int> duration, int routineDuration, double sum) {
+    if (routineDuration - sum == 1 || routineDuration == 10) return 60;
+
     final random = Random();
     return duration[random.nextInt(duration.length)];
   }
 
-  Exercise getRandomExercise(List<Exercise> exercises) {
+  Exercise getRandomExercise(List<Exercise> exercises, List<Exercise> chosen) {
     final random = Random();
-    return exercises[random.nextInt(exercises.length)];
+    Exercise exercise = exercises[random.nextInt(exercises.length)];
+    if (chosen.contains(exercise)) {
+      return getRandomExercise(exercises, chosen);
+    }
+    return exercise;
   }
 
   List<Exercise> sortOrder(List<Exercise> exercises) {
+    int order = 0;
+    for (var elem in exercises.where((element) => element.equipped == true)) {
+      elem.order = order;
+      order++;
+    }
+    for (var elem in exercises
+        .where((element) => element.equipped == false && element.id != "38")) {
+      elem.order = order;
+      order++;
+    }
+    int id = exercises.indexWhere((element) => element.id == "38");
+    if (id > -1) {
+      exercises[id].order = order;
+    }
     return exercises;
   }
 }

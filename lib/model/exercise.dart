@@ -5,7 +5,8 @@ class Exercise {
   List<int> duration = [];
   bool double = false;
   bool equipped = false;
-  List<String>? stimulus;
+  List<String> stimulus = [];
+  int order = -1;
 
   Exercise(
       {required this.id,
@@ -14,7 +15,7 @@ class Exercise {
       required this.duration,
       required this.double,
       required this.equipped,
-      this.stimulus});
+      required this.stimulus});
 
   Exercise.fromJson(Map<String, dynamic> json) {
     id = json['id'];
