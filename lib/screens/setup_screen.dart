@@ -137,7 +137,6 @@ class SetupScreenState extends State<SetupScreen> {
                   primary: Theme.of(context).colorScheme.secondary,
                 ),
                 onPressed: () {
-                  ParseExercises().printData();
                   Navigator.push(
                     context,
                     MaterialPageRoute(

@@ -5,11 +5,11 @@ import 'package:mobility/model/exercise.dart';
 
 class ParseExercises {
   Future<String> getJson() {
-    return rootBundle.loadString('data.json');
+    return rootBundle.loadString('assets/data.json');
   }
 
-  void printData() async {
+  void getExercises() async {
     var myData = json.decode(await getJson());
-    print(myData.toString());
+    final parsed = jsonDecode(myData).cast<Map<String, dynamic>>();
   }
 }
