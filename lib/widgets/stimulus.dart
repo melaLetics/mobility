@@ -13,8 +13,11 @@ class Stimulus extends StatelessWidget {
               (item) => Padding(
                 padding: const EdgeInsets.all(5.0),
                 child: Chip(
-                  label: Text(item),
-                  backgroundColor: Theme.of(context).colorScheme.primary,
+                  label: Text(item,
+                      style: const TextStyle(
+                        fontSize: 16,
+                      )),
+                  backgroundColor: Color.fromRGBO(1, 203, 203, .9),
                 ),
               ),
             )
