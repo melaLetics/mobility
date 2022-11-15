@@ -22,13 +22,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.1"
-  circular_countdown:
-    dependency: "direct main"
-    description:
-      name: circular_countdown
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.1.0"
   clock:
     dependency: transitive
     description:

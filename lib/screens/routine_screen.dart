@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobility/model/exercise.dart';
+import 'package:mobility/widgets/navigation.dart';
 import 'package:mobility/widgets/progress.dart';
 import 'package:mobility/widgets/show_exercise.dart';
 import 'package:mobility/widgets/stimulus.dart';
@@ -36,17 +37,26 @@ class _RoutineScreenState extends State<RoutineScreen> {
     return unique.length;
   }
 
-  void nextExercise() {
+  void stepForward() {
     setState(() {
       actual++;
     });
-  }
-
-  void updateCount() {
     if (widget.exercises[actual].id != lastId) {
       setState(() {
         lastId = widget.exercises[actual].id;
         count++;
+      });
+    }
+  }
+
+  void stepBack() {
+    setState(() {
+      actual--;
+    });
+    if (widget.exercises[actual].id != lastId) {
+      setState(() {
+        lastId = widget.exercises[actual].id;
+        count--;
       });
     }
   }
@@ -81,11 +91,26 @@ class _RoutineScreenState extends State<RoutineScreen> {
             const SizedBox(height: 50),
             Progress(count, total),
             const SizedBox(height: 50),
-            ShowExercise(widget.exercises[0].description,
-                widget.exercises[0].instruction),
+            isPause
+                ? const ShowExercise('Seite wechseln', [])
+                : ShowExercise(widget.exercises[actual].description,
+                    widget.exercises[actual].instruction),
             const SizedBox(height: 20),
-            Stimulus(widget.exercises[0].stimulus),
-            // Countdown-Wrapper
+            isPause
+                ? const Center()
+                : Stimulus(widget.exercises[actual].stimulus),
+            const SizedBox(height: 50),
+            Navigation(widget.exercises[actual].duration[0], () {
+              if (actual > 0) {
+                stepBack();
+              }
+            }, () {
+              if (actual < widget.exercises.length - 1) {
+                stepForward();
+              }
+            }, () {
+              togglePause();
+            }),
           ],
         ));
   }

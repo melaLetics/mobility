@@ -57,7 +57,7 @@
     {
       "id": "7",
       "description": "Wall Candle",
-      "instruction": ["Po auf dem Boden und an der\nWand, Beine parallel an der Wand ausgestreckt","Zehen nach unten ziehen", "Arme im 90° Winkel zur Seite,\nHandflächen zeigen nach oben"],
+      "instruction": ["Po auf dem Boden und an der\nWand, Beine parallel an der\nWand ausgestreckt","Zehen nach unten ziehen", "Arme im 90° Winkel zur Seite,\nHandflächen zeigen nach oben"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "true",
@@ -66,7 +66,7 @@
     {
       "id": "8",
       "description": "Wall Hinge",
-      "instruction": ["Eine Armlänge entfernt mit dem Blick\n zur Wand stellen","Hände flach an der Wand","Arme und Beine angespannt und gestreckt,\ndas Becken nach hinten schieben", "Natürliche Wölbung der Lendenwirbelsäule\n beibehalten"],
+      "instruction": ["Eine Armlänge entfernt mit dem\nBlick zur Wand stellen","Hände flach an der Wand","Arme und Beine angespannt und gestreckt,\ndas Becken nach hinten schieben", "Natürliche Wölbung der\nLendenwirbelsäule beibehalten"],
       "duration": [60, 120],
       "double": "false",
       "equipped": "true",
@@ -219,7 +219,7 @@
     {
       "id": "25",
       "description": "Butterfly",
-      "instruction": ["Sitzende Position, die Fußsohlen aneinander" ,"Knie nach außen und unten drücken", "Rücken gerade"],
+      "instruction": ["Sitzende Position, die Fußsohlen\naneinander" ,"Knie nach außen und unten drücken", "Rücken gerade"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -345,7 +345,7 @@
     {
       "id": "39",
       "description": "Medium Pec Stretch",
-      "instruction": ["Ellenbogen in Höhe der Nase an der Wand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen Schritt nach vorn gestellt"],
+      "instruction": ["Ellenbogen in Höhe der Nase\nan der Wand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen\nSchritt nach vorn gestellt"],
       "duration": [60],
       "double": "true",
       "equipped": "true",
@@ -363,7 +363,7 @@
     {
       "id": "41",
       "description": "Squat Opener",
-      "instruction": ["Füße stehen in Schulterbreite parallel", "Tiefe Squat Position, die Ellenbogen an der Innenseite der Knie", "Knie nach außen drücken, der Oberkörper bleibt aufrecht"],
+      "instruction": ["Füße stehen in Schulterbreite parallel", "Tiefe Squat Position,\ndie Ellenbogen an der Innenseite der Knie", "Knie nach außen drücken,\nder Oberkörper bleibt aufrecht"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -444,7 +444,7 @@
     {
       "id": "50",
       "description": "Active Finger Stretch",
-      "instruction": ["Im Vierfüßlerstand, Hände flach auf dem Boden", "Den Oberkörper nach vorn schieben, so dass die Handballen abheben", "Die Finger bleiben auf dem Boden, langsame und kontrollierte Bewegungen"],
+      "instruction": ["Im Vierfüßlerstand, Hände flach\nauf dem Boden", "Den Oberkörper nach vorn\nschieben, so dass die Handballen abheben", "Die Finger bleiben auf dem Boden,\nlangsame und kontrollierte Bewegungen"],
       "duration": [60, 120],
       "double": "false",
       "equipped": "false",
