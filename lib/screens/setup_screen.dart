@@ -145,14 +145,12 @@ class SetupScreenState extends State<SetupScreen> {
                   routine.sort((a, b) {
                     return a.order.compareTo(b.order);
                   });
-                  /*
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => RoutineScreen(routine),
                     ),
                   );
-                  */
                 },
                 child: const Text(
                   'Starte Session',
