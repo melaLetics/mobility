@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobility/model/exercise.dart';
 import 'package:mobility/widgets/progress.dart';
+import 'package:mobility/widgets/stimulus.dart';
 
 class RoutineScreen extends StatefulWidget {
   static const routeName = '/routine';
@@ -47,12 +48,10 @@ class _RoutineScreenState extends State<RoutineScreen> {
           children: [
             const SizedBox(height: 50),
             Progress(actual, total),
+            // Exercise
+            Stimulus(widget.exercises[0].stimulus),
+            // Countdown-Wrapper
           ],
         ));
-
-    // ProgressBar
-    // Exercise
-    // Stimulus Chips
-    // Countdown-Wrapper
   }
 }
