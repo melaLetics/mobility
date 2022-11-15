@@ -21,8 +21,8 @@
     {
       "id": "3",
       "description": "Pigeon",
-      "instruction": ["Im Ausfallschritt, hinteres Knie am Boden","Außenseite des vorderen Fußed und Knies auf dem Boden ablegen", "Minimale Beugung im hinteren Knie"],
-      "duration": [60, 120, 180],
+      "instruction": ["Im Ausfallschritt, hinteres Knie am Boden","Außenseite des vorderen Fußes und Knies auf dem Boden ablegen", "Minimale Beugung im hinteren Knie"],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus":  ["Glutes", "Hips", "Lumbar muscles"]
@@ -31,7 +31,7 @@
       "id": "4",
       "description": "Seated Piriformis Stretch",
       "instruction": ["Sitzende Position, Beine parallel und gestreckt","Ein Bein überschlagen, den Fuß flach aufgestellen", "Knie zur gegenüberliegenden Schulter ziehen", "Rücken gerade, Oberkörper zum übergeschlagenen Bein gerichtet"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Glutes", "Hips", "Lumbar muscles"]
@@ -57,7 +57,7 @@
     {
       "id": "7",
       "description": "Wall Candle",
-      "instruction": ["Po auf dem Boden und an der Wand, Beine an der Wand ausgestreckt","Zehen nach unten ziehen", "Arme im 90° Winkel zur Seite, Handflächen zeigen nach oben"],
+      "instruction": ["Po auf dem Boden und an der Wand, Beine parallel an der Wand ausgestreckt","Zehen nach unten ziehen", "Arme im 90° Winkel zur Seite, Handflächen zeigen nach oben"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "true",
@@ -67,7 +67,7 @@
       "id": "8",
       "description": "Wall Hinge",
       "instruction": ["Eine Armlänge entfernt mit dem Blick zu Wand stellen","Hände flach an der Wand","Arme und Beine angespannt und gestreckt, das Becken nach hinten schieben", "Natürliche Wölbung der Lendenwirbelsäule beibehalten"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "false",
       "equipped": "true",
       "stimulus": ["Shoulder", "Traps", "Lats", "Hamstrings"]
@@ -85,7 +85,7 @@
       "id": "10",
       "description": "Breakdancer",
       "instruction": ["Sitzende Position, Bein ist flach ausgestreckt","Der Fuß des anderen Beins liegt am Oberschenkel an", "Nach vorn beugen und den Fuß des gestreckten Beines fassen"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Hamstrings", "Calves", "Lumbar muscles"]
@@ -102,8 +102,8 @@
     {
       "id": "12",
       "description": "Half Lotus on Wall",
-      "instruction": ["In Rückenlage, der andere Fuß flach an der Wand, das Knie gebeugt","Knöchel des fußes liegt auf dem Knie, die Hüfte nahe an der Wand", "die Hand derselben Seite drückt das Knie zur Wand"],
-      "duration": [60, 120, 180],
+      "instruction": ["In Rückenlage, der andere Fuß flach an der Wand, das Knie gebeugt","Knöchel des Fußes liegt auf dem Knie, die Hüfte nahe an der Wand", "Die Hand derselben Seite drückt das Knie zur Wand"],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "true",
       "stimulus": ["Glutes", "Lumbar muscles", "Hips"]
@@ -157,7 +157,7 @@
       "id": "18",
       "description": "Thread the Needle",
       "instruction": ["Auf den Knien, Schultern entspannt, der Oberkörper ist zur Seite gedreht, der Arm wird unter die andere Achsel geführt","Der andere Arm ist auf dem Boden ausgestreckt, die Handfläche zeigt nach oben", "Die Hand so weit entfernt wie möglich, Schulter auf dem Boden"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Shoulder", "Lats"]
@@ -175,7 +175,7 @@
       "id": "20",
       "description": "Pec Sretch on the Ground",
       "instruction": ["In Bauchlage, beide Arme zur Seite ausgebreitet","Mit der Hand gegen den Boden stützen, um den Körper zu drehen. Das Bein hnter der Hüfte abstellen", "Gestreckter Arm bleibt flach auf dem Boden"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Pecs", "Shoulder"]
@@ -184,7 +184,7 @@
       "id": "21",
       "description": "Prayer Lat Stretch",
       "instruction": ["auf den Knien, Arme nach vorn gestreckt", "Hände flach auf dem Boden", "Arme zu einer Seite führen, während das Becken unverändert bleibt"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Shoulder", "Lats"]
@@ -229,7 +229,7 @@
       "id": "26",
       "description": "Quad Stretch",
       "instruction": ["Mit dem Rücken zur Wand, ein Knie gebeugt am Boden nah der Wand", "Hinterer Fuß an der Wand", "Oberkörper aufrecht, vorderes Bein im rechten Winkel, Fuß flach am Boden"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "true",
       "stimulus": ["Quad"]
@@ -238,7 +238,7 @@
       "id": "27",
       "description": "The Ballerina",
       "instruction": ["Im weiten Ausfallschritt, hinteres Knie am Boden.", "Becken nah am Boden", "Hinteres Bein rechtwinklig zur Körperlängsachse"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Adductors", "Hips"]
@@ -247,7 +247,7 @@
       "id": "28",
       "description": "The Frog",
       "instruction": ["Knie auf dem Boden, so weit wie möglich voneinander entfernt", "Becken so nah wie möglich am Boden", "Ellenbogen auf dem Boden"],
-      "duration": [120, 180],
+      "duration": [60, 120],
       "double": "false",
       "equipped": "false",
       "stimulus": ["Adductors", "Hips"]
@@ -273,7 +273,7 @@
     {
       "id": "31",
       "description": "Half Kneeling Quad Stretch",
-      "instruction": ["Stzende Position, Beine gestreckt. Das Bein anwinkeln, der Fuß bleibt in natürlicher Position", "Anderes Bein gestreckt", "rückenlage auf dem Boden"],
+      "instruction": ["Stzende Position, Beine gestreckt. Das Bein anwinkeln, der Fuß bleibt in natürlicher Position", "Anderes Bein gestreckt", "Rückenlage auf dem Boden"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -328,7 +328,7 @@
       "id": "37",
       "description": "Lizard Pose",
       "instruction": ["Im weiten Ausfallschritt, Po und Rumpf angespant","Ellenbogen der selben Seite geht neben dem vorderen Knöchel auf den Boden"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Hips", "Adductors"]
@@ -372,7 +372,7 @@
     {
       "id": "42",
       "description": "Self Hug Stretch",
-      "instruction": ["Gegenüberliegende Hand zieht den Ellenbogen von außen heran", "Oberkörper gerade", "Bauchmuskulatur angespannt"],
+      "instruction": ["Gegenüberliegende Hand zieht den Ellenbogen des gestreckten Arms von außen heran", "Oberkörper gerade", "Bauchmuskulatur angespannt"],
       "duration": [60],
       "double": "true",
       "equipped": "false",
@@ -399,7 +399,7 @@
     {
       "id": "45",
       "description": "Scapula Mobilisation",
-      "instruction": ["Vierfüßlerstand, Hande flach am Boden", "Arme gestreckt", "Brust zwischen den Schultern nach oben und unten schieben"],
+      "instruction": ["Vierfüßlerstand, Hände flach am Boden", "Arme gestreckt", "Brust zwischen den Schultern nach oben und unten schieben"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -408,7 +408,7 @@
     {
       "id": "46",
       "description": "Resting Cossack Squat",
-      "instruction": ["Fuß flach am Boden, tiefe Hochposition", "Anderes Bein gestreckt", "Zehen zeigen nach oben"],
+      "instruction": ["Fuß flach am Boden, tiefe Hockposition", "Anderes Bein gestreckt", "Zehen zeigen nach oben"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -417,8 +417,8 @@
     {
       "id": "47",
       "description": "Manual Forearm Stretch",
-      "instruction": ["Arn gestrecktm Handfläche nach vorn", "Finger zeigen nach unten", "Die andere Hand hält alle Finger außer den Daumen fest"],
-      "duration": [60, 120],
+      "instruction": ["Arm gestreckt, Handfläche nach vorn", "Finger zeigen nach unten", "Die andere Hand hält alle Finger außer den Daumen fest"],
+      "duration": [60],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Flexors"]
@@ -436,7 +436,7 @@
       "id": "49",
       "description": "Ankle Mobilisation",
       "instruction": ["Vorderer Fuß flach aufgesetzt, hinteres Knie auf dem Boden", "Führe deine Brust zum Knie", "Bewegung vor und zurück, Gewicht auf dem Sprunggelenk"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Ankles"]
@@ -445,7 +445,7 @@
       "id": "50",
       "description": "Active Finger Stretch",
       "instruction": ["Im Vierfüßlerstand, Hände flach auf dem Boden", "Den Oberkörper nach vorn schieben, so dass die Handballen abheben", "Die Finger bleiben auf dem Boden, langsame und kontrollierte Bewegungen"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "false",
       "equipped": "false",
       "stimulus": ["Flexors", "Extensors"]
@@ -454,7 +454,7 @@
       "id": "51",
       "description": "Manual Trizeps Stretch",
       "instruction": ["Hand flach auf dem Rücken, so tief wie möglich", "Die andere Hand zieht den Ellenbogen nach innen und hinten", "Bauchmuskeln angespannt"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "false",
       "stimulus": ["Trizeps", "Lats", "Shoulder"]
@@ -472,7 +472,7 @@
       "id": "53",
       "description": "Upper Pec Stretch",
       "instruction": ["Im parallelen Stand zur Wand Ellenbogen in Stirnhöhe an die Wand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen Schritt nach vorn gestellt"],
-      "duration": [60, 120, 180],
+      "duration": [60, 120],
       "double": "true",
       "equipped": "true",
       "stimulus": ["Shoulder", "Pecs"]
