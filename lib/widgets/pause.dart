@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_timer_countdown/flutter_timer_countdown.dart';
 
 typedef VoidCallback = void Function();
 
-class Countdown extends StatefulWidget {
-  final int seconds;
-  final VoidCallback timerEnd;
-  const Countdown(this.seconds, this.timerEnd, {super.key});
+class Pause extends StatefulWidget {
+  final VoidCallback onTimerEnd;
+
+  const Pause(this.onTimerEnd, {super.key});
 
   @override
-  State<Countdown> createState() => _CountdownState();
+  State<Pause> createState() => _PauseState();
 }
 
-class _CountdownState extends State<Countdown> {
+class _PauseState extends State<Pause> {
   @override
   void initState() {
     super.initState();
@@ -29,8 +28,8 @@ class _CountdownState extends State<Countdown> {
     return TimerCountdown(
         format: CountDownTimerFormat.secondsOnly,
         endTime: DateTime.now().add(
-          Duration(
-            seconds: widget.seconds,
+          const Duration(
+            seconds: 6,
           ),
         ),
         enableDescriptions: false,
@@ -39,7 +38,7 @@ class _CountdownState extends State<Countdown> {
           color: Theme.of(context).colorScheme.primary,
         ),
         onEnd: () {
-          widget.timerEnd();
+          widget.onTimerEnd();
         });
   }
 }

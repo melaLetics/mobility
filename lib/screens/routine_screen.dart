@@ -1,3 +1,5 @@
+import 'dart:isolate';
+
 import 'package:flutter/material.dart';
 import 'package:mobility/model/exercise.dart';
 import 'package:mobility/widgets/navigation.dart';
@@ -20,8 +22,9 @@ class _RoutineScreenState extends State<RoutineScreen> {
   int count = 1;
   int total = 0;
   String lastId = "";
-  bool isPause = false;
+  bool isPause = true;
   bool onEnd = false;
+  bool isFirstPause = true;
 
   @override
   void initState() {
@@ -73,6 +76,19 @@ class _RoutineScreenState extends State<RoutineScreen> {
     });
   }
 
+  void onTimerEnd() {
+    // pause mode after the first exercise, then the next exercise has to be shown
+    if (!isPause && !isFirstPause) {
+      stepForward();
+    }
+    if (actual == 0 && isFirstPause) {
+      setState(() {
+        isFirstPause = false;
+      });
+    }
+    togglePause();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,26 +107,35 @@ class _RoutineScreenState extends State<RoutineScreen> {
             const SizedBox(height: 50),
             Progress(count, total),
             const SizedBox(height: 50),
-            isPause
-                ? const ShowExercise('Seite wechseln', [])
-                : ShowExercise(widget.exercises[actual].description,
-                    widget.exercises[actual].instruction),
+            ShowExercise(widget.exercises[actual].description,
+                widget.exercises[actual].instruction),
             const SizedBox(height: 20),
-            isPause
-                ? const Center()
-                : Stimulus(widget.exercises[actual].stimulus),
+            Stimulus(widget.exercises[actual].stimulus),
             const SizedBox(height: 50),
-            Navigation(widget.exercises[actual].duration[0], () {
-              if (actual > 0) {
-                stepBack();
-              }
-            }, () {
-              if (actual < widget.exercises.length - 1) {
-                stepForward();
-              }
-            }, () {
-              togglePause();
-            }),
+            Navigation(
+              widget.exercises[actual].duration[0],
+              onEnd,
+              isPause,
+              () {
+                if (actual > 0) {
+                  stepBack();
+                }
+              },
+              () {
+                if (actual < widget.exercises.length - 1) {
+                  stepForward();
+                } else {
+                  if (!onEnd) {
+                    setOnEnd();
+                  } else {
+                    Navigator.pushReplacementNamed(context, '/setup');
+                  }
+                }
+              },
+              () {
+                onTimerEnd();
+              },
+            ),
           ],
         ));
   }

@@ -156,6 +156,7 @@ class SetupScreenState extends State<SetupScreen> {
                   'Starte Session',
                   style: TextStyle(
                     fontSize: 25,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

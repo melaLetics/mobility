@@ -17,7 +17,7 @@ class Stimulus extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 16,
                       )),
-                  backgroundColor: Color.fromRGBO(1, 203, 203, .9),
+                  backgroundColor: Color.fromRGBO(1, 203, 203, .3),
                 ),
               ),
             )
