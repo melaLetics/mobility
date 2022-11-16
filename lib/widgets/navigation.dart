@@ -8,12 +8,21 @@ class Navigation extends StatelessWidget {
   final int seconds;
   final bool isEnd;
   final bool pause;
+  final bool enableSkipPrevious;
+  final bool enableSkipNext;
   final VoidCallback backwards;
   final VoidCallback forwards;
   final VoidCallback timerEnd;
 
-  const Navigation(this.seconds, this.isEnd, this.pause, this.backwards,
-      this.forwards, this.timerEnd,
+  const Navigation(
+      this.seconds,
+      this.isEnd,
+      this.pause,
+      this.enableSkipPrevious,
+      this.enableSkipNext,
+      this.backwards,
+      this.forwards,
+      this.timerEnd,
       {super.key});
 
   @override
@@ -26,11 +35,18 @@ class Navigation extends StatelessWidget {
           Expanded(
             flex: 5,
             child: IconButton(
-              icon: const Icon(Icons.skip_previous, color: Colors.grey),
+              icon: Icon(
+                Icons.skip_previous,
+                color: enableSkipPrevious
+                    ? Colors.grey
+                    : Color.fromARGB(205, 41, 40, 40),
+              ),
               iconSize: 60,
-              onPressed: () {
-                backwards();
-              },
+              onPressed: enableSkipPrevious
+                  ? () {
+                      backwards();
+                    }
+                  : null,
             ),
           ),
           Expanded(
@@ -47,14 +63,18 @@ class Navigation extends StatelessWidget {
                       color: Theme.of(context).colorScheme.primary,
                       size: 60,
                     )
-                  : const Icon(
+                  : Icon(
                       Icons.skip_next,
-                      color: Colors.grey,
+                      color: enableSkipNext
+                          ? Colors.grey
+                          : Color.fromARGB(205, 41, 40, 40),
                     ),
               iconSize: 60,
-              onPressed: () {
-                forwards();
-              },
+              onPressed: enableSkipNext
+                  ? () {
+                      forwards();
+                    }
+                  : null,
             ),
           ),
         ],

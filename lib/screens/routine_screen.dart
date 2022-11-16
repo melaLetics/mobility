@@ -1,5 +1,3 @@
-import 'dart:isolate';
-
 import 'package:flutter/material.dart';
 import 'package:mobility/model/exercise.dart';
 import 'package:mobility/widgets/navigation.dart';
@@ -116,6 +114,8 @@ class _RoutineScreenState extends State<RoutineScreen> {
               widget.exercises[actual].duration[0],
               onEnd,
               isPause,
+              actual > 0 && !isPause,
+              !isPause,
               () {
                 if (actual > 0) {
                   stepBack();

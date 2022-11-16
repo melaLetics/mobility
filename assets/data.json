@@ -3,7 +3,7 @@
     {
       "id": "1",
       "description": "Kneeling Hamstring Stretch",
-      "instruction": ["Im Ausfallschritt,\ninteres Knie auf dem Boden", "Vorderes Knie leicht gebeugt,\nFerse auf dem Boden", "Oberkörper nach vorn gebeugt", "Händer am Fuß,\nRücken gerade"],
+      "instruction": ["Im Ausfallschritt, hinteres Knie auf\ndem Boden", "Vorderes Knie leicht gebeugt, Fers\nauf dem Boden", "Oberkörper nach vorn gebeugt", "Hände am Fuß, Rücken gerade"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -12,7 +12,7 @@
     {
       "id": "2",
       "description": "Hamstrins Stretch",
-      "instruction": ["Sitzende Position,\nBeine parallel und gestreckt","Rücken nach vorn gerundet\nund entspannt", "Füße greifen"],
+      "instruction": ["Sitzende Position, Beine parallel und\ngestreckt","Rücken nach vorn gerundet und\nentspannt", "Füße greifen"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -21,7 +21,7 @@
     {
       "id": "3",
       "description": "Pigeon",
-      "instruction": ["Im Ausfallschritt,\nhinteres Knie am Boden","Außenseite des vorderen Fußes\nund Knies auf dem Boden ablegen", "Minimale Beugung im hinteren Knie"],
+      "instruction": ["Im Ausfallschritt, hinteres Knie am\nBoden","Außenseite des vorderen Fußes und\nKnies auf dem Boden ablegen", "Minimale Beugung im hinteren Knie"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -30,7 +30,7 @@
     {
       "id": "4",
       "description": "Seated Piriformis Stretch",
-      "instruction": ["Sitzende Position,\nBeine parallel und gestreckt","Ein Bein überschlagen,\nden Fuß flach aufgestellen", "Knie zur gegenüberliegenden\nSchulter ziehen", "Rücken gerade,\nOberkörper zum übergeschlagenen\nBein gerichtet"],
+      "instruction": ["Sitzende Position, Beine parallel und\ngestreckt","Ein Bein überschlagen, den Fuß flach\naufstellen", "Knie zur gegenüberliegenden Schulte\nziehen", "Rücken gerade, Oberkörper zum\nübergeschlagenen Bein gerichtet"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -43,12 +43,12 @@
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
-      "stimulus": ["Lumbar muscles", "Hamstrings", "Traps", "Calves"]
+      "stimulus": ["Lumbar muscles", "Hamstrings", "Calves"]
     },
         {
       "id": "6",
       "description": "Knight to Hamstring Stretch",
-      "instruction": ["Raumgreifender Lunge, hinteres\nKnie am Boden, Oberkörper in\nPhase 1 aufrecht", "Vorderes Bein gestreckt,\nOberkörper lehnt sich in Phase 2\nzum vorderen Fuß hin", "Langsamer und kontrollierter\nRhythmus, Rücken bleibt gerade"],
+      "instruction": ["Raumgreifender Lunge, hinteres Knie\nam Boden, Oberkörper in Phase 1\naufrecht", "Vorderes Bein gestreckt, Oberkörper\nlehnt sich in Phase 2 zum vorderen\nFuß hin", "Langsamer und kontrollierter Rhythmus,\nRücken bleibt gerade"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -57,7 +57,7 @@
     {
       "id": "7",
       "description": "Wall Candle",
-      "instruction": ["Po auf dem Boden und an der\nWand, Beine parallel an der\nWand ausgestreckt","Zehen nach unten ziehen", "Arme im 90° Winkel zur Seite,\nHandflächen zeigen nach oben"],
+      "instruction": ["Po auf dem Boden und an der Wand,\nBeine parallel an der Wand ausgestreckt","Zehen nach unten ziehen", "Arme im 90° Winkel zur Seite,\nHandflächen zeigen nach oben"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "true",
@@ -66,7 +66,7 @@
     {
       "id": "8",
       "description": "Wall Hinge",
-      "instruction": ["Eine Armlänge entfernt mit dem\nBlick zur Wand stellen","Hände flach an der Wand","Arme und Beine angespannt und\ngestreckt, das Becken nach hinten\nschieben", "Natürliche Wölbung der\nLendenwirbelsäule beibehalten"],
+      "instruction": ["Eine Armlänge entfernt mit dem Blick\nzur Wand stellen","Hände flach an der Wand","Arme und Beine angespannt und\ngestreckt, das Becken nach hinten\nschieben", "Natürliche Wölbung der\nLendenwirbelsäule beibehalten"],
       "duration": [60, 120],
       "double": "false",
       "equipped": "true",
@@ -75,7 +75,7 @@
     {
       "id": "9",
       "description": "Wall V Stretch",
-      "instruction": ["Po auf dem Boden und an der Wand","Beine an der Wand völlig\ngestreckt und gespreizt", "Der Kopf liegt auf dem Boden"],
+      "instruction": ["Po auf dem Boden und an der Wand","Beine an der Wand völlig gestreckt\nund weit gespreizt", "Der Kopf liegt auf dem Boden"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "true",
@@ -84,7 +84,7 @@
     {
       "id": "10",
       "description": "Breakdancer",
-      "instruction": ["Sitzende Position,\nBein ist flach ausgestreckt","Der Fuß des anderen Beins liegt\nam Oberschenkel an", "Nach vorn beugen und den Fuß\ndes gestreckten Beines fassen"],
+      "instruction": ["Sitzende Position, Bein ist flach\nausgestreckt","Der Fuß des anderen Beins liegt am\nOberschenkel an", "Nach vorn beugen und den Fuß des\ngestreckten Beines fassen"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -93,7 +93,7 @@
     {
       "id": "11",
       "description": "Squat to Stand",
-      "instruction": ["Position 1: Gewicht auf den Fersen,\nBrustkorb gerade, tiefe\nSquatposition","Position 2: Beine gestreckt,\nRücken gerundet", "Die Finger bleiben unter den Zehen"],
+      "instruction": ["Position 1: Gewicht auf den Fersen,\nBrustkorb gerade, tiefe Squatposition","Position 2: Beine gestreckt, Rücken\ngerundet", "Die Finger bleiben unter den Zehen"],
       "duration": [60, 120],
       "double": "false",
       "equipped": "false",
@@ -102,7 +102,7 @@
     {
       "id": "12",
       "description": "Half Lotus on Wall",
-      "instruction": ["In Rückenlage, der andere Fuß\nflach an der Wand,\ndas Knie gebeugt","Knöchel des Fußes liegt\nauf dem Knie, die Hüfte nahe\nan der Wand", "Die Hand derselben Seite\ndrückt das Knie zur Wand"],
+      "instruction": ["In Rückenlage, der andere Fuß\nflach an der Wand, das Knie gebeugt","Knöchel des Fußes liegt auf dem\nKnie, die Hüfte nahe an der Wand", "Die Hand derselben Seite drückt das\nKnie zur Wand"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "true",
@@ -111,7 +111,7 @@
     {
       "id": "13",
       "description": "Downward Facing Dog",
-      "instruction": ["Fersen auf dem Boden","Rücken gerade", "Hände auf dem Boden,\nKopf in einer Linie mit dem\nOberkörper"],
+      "instruction": ["Fersen auf dem Boden","Rücken gerade", "Hände auf dem Boden, Kopf in einer\nLinie mit dem Oberkörper"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -120,7 +120,7 @@
     {
       "id": "14",
       "description": "Downward Facing Dog to Cobra",
-      "instruction": ["In Phase 1 Füße und Händer auf\ndem Boden, Beine gestreckt", "In Phase 2 auf den Boden legen,\nBrustkorb nach oben", "Langsame und kontrollierte\nBewegung"],
+      "instruction": ["In Phase 1 Füße und Hände auf dem\nBoden, Beine gestreckt", "In Phase 2 auf den Boden legen,\nBrustkorb nach oben", "Langsame und kontrollierte Bewegung"],
       "duration": [60, 120],
       "double": "false",
       "equipped": "false",
@@ -138,7 +138,7 @@
     {
       "id": "16",
       "description": "Back Stretch",
-      "instruction": ["Auf dem Boden sitzen, die\nFußsohlen aneinander" ,"Arme greifen von innen her\nunter den Beinen durch nach\nden Knöcheln", "Rücken und Kopf ganz nach vorn\neinrollen"],
+      "instruction": ["Auf dem Boden sitzen, die Fußsohlen\naneinander" ,"Arme greifen von innen her unter\nden Beinen durch nach den Knöcheln", "Rücken und Kopf ganz nach vorn\neinrollen"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -147,7 +147,7 @@
     {
       "id": "17",
       "description": "Cat and Cow",
-      "instruction": ["Im Vierfüßlerstand, Schultern über\nden Handgelenken","Langsame und kontrollierte Beuge\nund Streckbewegung des Rumpfes"],
+      "instruction": ["Im Vierfüßlerstand, Schultern über\nden Handgelenken","Langsame und kontrollierte Beuge-\nund Streckbewegung des Rumpfes"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -156,7 +156,7 @@
     {
       "id": "18",
       "description": "Thread the Needle",
-      "instruction": ["Auf den Knien, Schultern entspannt,\nder Oberkörper ist zur Seite gedreht,\nder Arm wird unter die andere\nAchsel geführt","Der andere Arm ist auf\ndem Boden ausgestreckt, die\nHandfläche zeigt nach oben", "Die Hand so weit entfernt\nwie möglich, Schulter am Boden"],
+      "instruction": ["Auf den Knien, Schultern entspannt,\nder Oberkörper ist zur Seite gedreht,\nder Arm wird unter die andere\nAchsel geführt","Der andere Arm ist auf dem Boden\nausgestreckt, die Handfläche zeigt\nnach oben", "Die Hand so weit entfernt wie möglich,\nSchulter am Boden"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -165,7 +165,7 @@
     {
       "id": "19",
       "description": "Overhead Squat on Wall",
-      "instruction": ["In Rückenlage mit den Füßen\nzur Wand","Füße flach gegen die Wand\nstellen, in tiefer Squat Position", "Arme neben dem Kopf flach auf\ndem Boden ausgestreckt"],
+      "instruction": ["In Rückenlage mit den Füßen zur Wand","Füße flach gegen die Wand stellen,\nin tiefer Squat Position", "Arme neben dem Kopf flach auf dem\nBoden ausgestreckt"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "true",
@@ -174,7 +174,7 @@
     {
       "id": "20",
       "description": "Pec Stretch on the Ground",
-      "instruction": ["In Bauchlage, beide Arme zur\nSeite ausgebreitet","Mit der Hand gegen den Boden\nstützen, um den Körper zu drehen.\nDas Bein hnter der Hüfte abstellen", "Gestreckter Arm bleibt flach auf\ndem Boden"],
+      "instruction": ["In Bauchlage, beide Arme zur Seit\nausgebreitet","Mit der Hand gegen den Boden\nstützen, um den Körper zu drehen.\nDas Bein hnter der Hüfte abstellen", "Gestreckter Arm bleibt flach auf dem\nBoden"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -183,7 +183,7 @@
     {
       "id": "21",
       "description": "Prayer Lat Stretch",
-      "instruction": ["auf den Knien, Arme nach vorn\ngestreckt", "Hände flach auf dem Boden", "Arme zu einer Seite führen,\nwährend das Becken unverändert\nbleibt"],
+      "instruction": ["auf den Knien, Arme nach vorn\ngestreckt", "Hände flach auf dem Boden", "Arme zu einer Seite führen, während\ndas Becken unverändert\nbleibt"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -192,7 +192,7 @@
     {
       "id": "22",
       "description": "Wall Twist",
-      "instruction": ["Tiefe Squat Position mit dem\nRücken an der Wand", "Arm und Handfläche gegen die\nWand drücken, den Oberkörper\ndabei leicht drehen", "Arm und Oberkörper gerade halten"],
+      "instruction": ["Tiefe Squat Position mit dem Rücken\nan der Wand", "Arm und Handfläche gegen die Wand\ndrücken, den Oberkörper dabei\nleicht drehen", "Arm und Oberkörper gerade halten"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "true",
@@ -201,7 +201,7 @@
     {
       "id": "23",
       "description": "The Book",
-      "instruction": ["In Seitenlage, Hüfte und Knie\num 90°C gebeugt", "Beide Arme zur Seite gestreckt,\nHandflächen übereinander", "Oberkörper zur anderen Seite\ndrehen, den oberen Arm dabei\nmitnehmen."],
+      "instruction": ["In Seitenlage, Hüfte und Knie um 90°\n gebeugt", "Beide Arme zur Seite gestreckt,\nHandflächen übereinander", "Oberkörper zur anderen Seite drehen,\nden oberen Arm dabei mitnehmen."],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -210,7 +210,7 @@
     {
       "id": "24",
       "description": "The Sagittarius",
-      "instruction": ["In Seitenlage, Hüfte und Knie um\n90°C gebeugt","Knie festhalten, anderes Bein\ngestreckt in einer Linie\nmit dem Kopf", "Anderer Arm entspannt,\nSchulter auf dem Boden"],
+      "instruction": ["In Seitenlage, Hüfte und Knie um 90°\n gebeugt","Knie festhalten, anderes Bein gestreck\nin einer Linie mit dem Kopf", "Anderer Arm entspannt, Schulter auf\ndem Boden"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -228,7 +228,7 @@
     {
       "id": "26",
       "description": "Quad Stretch",
-      "instruction": ["Mit dem Rücken zur Wand, ein Knie\ngebeugt am Boden nah der Wand", "Hinterer Fuß an der Wand", "Oberkörper aufrecht, vorderes Bein\nim rechten Winkel, Fuß flach am\nBoden"],
+      "instruction": ["Mit dem Rücken zur Wand, ein Knie\ngebeugt am Boden nah der Wand", "Hinterer Fuß an der Wand", "Oberkörper aufrecht, vorderes Bein\nim rechten Winkel, Fuß flach am Boden"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "true",
@@ -237,7 +237,7 @@
     {
       "id": "27",
       "description": "The Ballerina",
-      "instruction": ["Im weiten Ausfallschritt,\nhinteres Knie am Boden.", "Becken nah am Boden", "Hinteres Bein rechtwinklig zur\nKörperlängsachse"],
+      "instruction": ["Im weiten Ausfallschritt, hinteres Knie\nam Boden.", "Becken nah am Boden", "Hinteres Bein rechtwinklig zur\nKörperlängsachse"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -246,7 +246,7 @@
     {
       "id": "28",
       "description": "The Frog",
-      "instruction": ["Knie auf dem Boden, so weit wie\nmöglich voneinander entfernt", "Becken so nah wie möglich am\nBoden", "Ellenbogen auf dem Boden"],
+      "instruction": ["Knie auf dem Boden, so weit wie möglich\nvoneinander entfernt", "Becken so nah wie möglich am Boden", "Ellenbogen auf dem Boden"],
       "duration": [60, 120],
       "double": "false",
       "equipped": "false",
@@ -255,7 +255,7 @@
     {
       "id": "29",
       "description": "Wall Butterfly",
-      "instruction": ["Der Po am Boden und an der Wand","Füße an der Wand,\ndie Fußsohlen aneinander", "Knie drücken nach außen"],
+      "instruction": ["Der Po am Boden und an der Wand","Füße an der Wand, die Fußsohlen\naneinander", "Knie drücken nach außen"],
       "duration": [120, 180],
       "double": "false",
       "equipped": "true",
@@ -264,7 +264,7 @@
     {
       "id": "30",
       "description": "Forearm Stretch",
-      "instruction": ["Im Vierfüßlerstand, Hände flach\nauf dem Boden", "Die Finger zeigen zum Körper,\nArme gestreckt", "Schultern hinter den Handgelenken"],
+      "instruction": ["Im Vierfüßlerstand, Hände flach\nauf dem Boden", "Die Finger zeigen zum Körper, Arme\ngestreckt", "Schultern hinter den Handgelenken"],
       "duration": [60],
       "double": "false",
       "equipped": "false",
@@ -318,7 +318,7 @@
     {
       "id": "36",
       "description": "V Sit",
-      "instruction": ["Auf dem Boden sitzende Position,\ndie Beine so weit wie\nmöglich gegrätscht","Rücken nach vorn gerundet", "Brust so nah wie möglich am Boden"],
+      "instruction": ["Auf dem Boden sitzende Position,\ndie Beine so weit wie möglich\ngegrätscht","Rücken nach vorn gerundet", "Brust so nah wie möglich am Boden"],
       "duration": [120, 180],
       "double": "false",
       "equipped": "false",
@@ -327,7 +327,7 @@
     {
       "id": "37",
       "description": "Lizard Pose",
-      "instruction": ["Im weiten Ausfallschritt, Po und\nRumpf angespant","Ellenbogen der selben Seite geht\nneben dem vorderen Knöchel\nauf den Boden"],
+      "instruction": ["Im weiten Ausfallschritt, Po und\nRumpf angespant","Ellenbogen der selben Seite geht\nneben dem vorderen Knöchel auf den\nBoden"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -345,7 +345,7 @@
     {
       "id": "39",
       "description": "Medium Pec Stretch",
-      "instruction": ["Ellenbogen in Höhe der Nase\nan der Wand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen\nSchritt nach vorn gestellt"],
+      "instruction": ["Ellenbogen in Höhe der Nase an der\nWand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen Schritt\nnach vorn gestellt"],
       "duration": [60],
       "double": "true",
       "equipped": "true",
@@ -354,7 +354,7 @@
     {
       "id": "40",
       "description": "Turn Back Stretch",
-      "instruction": ["Handfläche flach an die Wand\ndrücken", "Der Arm ist gestreckt", "Füße und Kopf von der Wand\nwegdrehen"],
+      "instruction": ["Handfläche flach an die Wand drücken", "Der Arm ist gestreckt", "Füße und Kopf von der Wand\nwegdrehen"],
       "duration": [60],
       "double": "true",
       "equipped": "true",
@@ -363,7 +363,7 @@
     {
       "id": "41",
       "description": "Squat Opener",
-      "instruction": ["Füße stehen in Schulterbreite\nparallel zueinander", "Tiefe Squat Position,\ndie Ellenbogen an der Innenseite\nder Knie", "Knie nach außen drücken,\nder Oberkörper bleibt aufrecht"],
+      "instruction": ["Füße stehen in Schulterbreite parallel\nzueinander", "Tiefe Squat Position, die\nEllenbogen an der Innenseite der Knie", "Knie nach außen drücken,\nder Oberkörper bleibt aufrecht"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -372,7 +372,7 @@
     {
       "id": "42",
       "description": "Self Hug Stretch",
-      "instruction": ["Gegenüberliegende Hand zieht\nden Ellenbogen des gestreckten\nArms von außen heran", "Oberkörper gerade", "Bauchmuskulatur angespannt"],
+      "instruction": ["Gegenüberliegende Hand zieht den\nEllenbogen des gestreckten Arms von\naußen heran", "Oberkörper gerade", "Bauchmuskulatur angespannt"],
       "duration": [60],
       "double": "true",
       "equipped": "false",
@@ -381,7 +381,7 @@
     {
       "id": "43",
       "description": "Hip Circles",
-      "instruction": ["Im aufrechten Stand ein Knie\nbeugen und anheben, bis\nder Oberschenkel parallel zum\nBoden ist", "Das Knie vom Körper weg zur Seite\ndrehen, dann den Fuß zurück\nauf den Boden setzen", "Seite wechseln"],
+      "instruction": ["Im aufrechten Stand ein Knie beugen\nund anheben, bis der Oberschenkel\nparallel zum Boden ist", "Das Knie vom Körper weg zur Seite\ndrehen, dann den Fuß zurück auf den\nBoden setzen", "Seite wechseln"],
       "duration": [60, 120],
       "double": "false",
       "equipped": "false",
@@ -390,7 +390,7 @@
     {
       "id": "44",
       "description": "Hip Stretch",
-      "instruction": ["Im weiten Ausfallschritt die gleiche\nHand nach oben ausstrecken", "Hüfte leicht nach vorne schieben", "Leichte Beugung des Rumpfes\nzur anderen Seite"],
+      "instruction": ["Im weiten Ausfallschritt die gleiche\nHand nach oben ausstrecken", "Hüfte leicht nach vorne schieben", "Leichte Beugung des Rumpfes zur\nanderen Seite"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -399,7 +399,7 @@
     {
       "id": "45",
       "description": "Scapula Mobilisation",
-      "instruction": ["Vierfüßlerstand, Hände flach am\nBoden", "Arme gestreckt", "Brust zwischen den Schultern nach\noben und unten schieben"],
+      "instruction": ["Vierfüßlerstand, Hände flach am Boden", "Arme gestreckt", "Brust zwischen den Schultern nach\noben und unten schieben"],
       "duration": [60, 120, 180],
       "double": "false",
       "equipped": "false",
@@ -408,7 +408,7 @@
     {
       "id": "46",
       "description": "Resting Cossack Squat",
-      "instruction": ["Fuß flach am Boden, tiefe\nHockposition", "Anderes Bein gestreckt", "Zehen zeigen nach oben"],
+      "instruction": ["Fuß flach am Boden, tiefe Hockposition", "Anderes Bein gestreckt", "Zehen zeigen nach oben"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -417,7 +417,7 @@
     {
       "id": "47",
       "description": "Manual Forearm Stretch",
-      "instruction": ["Arm gestreckt, Handfläche nach vorn", "Finger zeigen nach unten", "Die andere Hand hält alle Finger\naußer den Daumen fest"],
+      "instruction": ["Arm gestreckt, Handfläche nach vorn", "Finger zeigen nach unten", "Die andere Hand hält alle Finger außer\nden Daumen fest"],
       "duration": [60],
       "double": "true",
       "equipped": "false",
@@ -426,7 +426,7 @@
     {
       "id": "48",
       "description": "Lower Pec Stretch",
-      "instruction": ["Paralleler Stand zur Wand,\nEllenbogen in Schulterhöhe an der\nWand", "Handfläche flach an der Wand", "Füße und Kopf zur anderen Seite\ndrehen"],
+      "instruction": ["Paralleler Stand zur Wand,\nEllenbogen in Schulterhöhe an der Wand", "Handfläche flach an der Wand", "Füße und Kopf zur anderen Seite\ndrehen"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "true",
@@ -444,7 +444,7 @@
     {
       "id": "50",
       "description": "Active Finger Stretch",
-      "instruction": ["Im Vierfüßlerstand, Hände flach\nauf dem Boden", "Den Oberkörper nach vorn\nschieben, so dass die Handballen\nabheben", "Die Finger bleiben auf dem\nBoden, langsame und kontrollierte\nBewegungen"],
+      "instruction": ["Im Vierfüßlerstand, Hände flach auf\ndem Boden", "Den Oberkörper nach vorn schieben,\nso dass die Handballen abheben", "Die Finger bleiben auf dem Boden,\nlangsame und kontrollierte Bewegungen"],
       "duration": [60, 120],
       "double": "false",
       "equipped": "false",
@@ -453,7 +453,7 @@
     {
       "id": "51",
       "description": "Manual Trizeps Stretch",
-      "instruction": ["Hand flach auf dem Rücken, so tief\nwie möglich", "Die andere Hand zieht den\nEllenbogen nnach innen und hinten", "Bauchmuskeln angespannt"],
+      "instruction": ["Hand flach auf dem Rücken, so tief\nwie möglich", "Die andere Hand zieht den Ellenbogen\nnach innen und hinten", "Bauchmuskeln angespannt"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -462,7 +462,7 @@
     {
       "id": "52",
       "description": "Neck Stretch",
-      "instruction": ["Aurechter Sitz, der Nacken wird zur\nanderen Seite gebeugt", "Rücken bleibt gerade, Kinn neutral", "Der Arm wird nach unten\nsausgestreckt, die Schulter bleibt\nunten"],
+      "instruction": ["Aurechter Sitz, der Nacken wird zur\nanderen Seite gebeugt", "Rücken bleibt gerade, Kinn neutral", "Der Arm wird nach unten ausgestreckt,\ndie Schulter bleibt\nunten"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "false",
@@ -471,7 +471,7 @@
     {
       "id": "53",
       "description": "Upper Pec Stretch",
-      "instruction": ["Im parallelen Stand zur Wand\nEllenbogen in Stirnhöhe an die Wand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen\nSchritt nach vorn gestellt"],
+      "instruction": ["Im parallelen Stand zur Wand\nEllenbogen in Stirnhöhe an die Wand", "Handfläche flach an der Wand", "Fuß der gleichen Seite einen Schritt\nnach vorn gestellt"],
       "duration": [60, 120],
       "double": "true",
       "equipped": "true",

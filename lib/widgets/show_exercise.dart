@@ -22,7 +22,7 @@ class ShowExercise extends StatelessWidget {
                     Text(
                       item,
                       style: const TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -49,7 +49,7 @@ class ShowExercise extends StatelessWidget {
             Text(
               description,
               style: const TextStyle(
-                fontSize: 24,
+                fontSize: 26,
                 fontWeight: FontWeight.bold,
               ),
             ),
