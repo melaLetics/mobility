@@ -50,10 +50,11 @@ class Navigation extends StatelessWidget {
             ),
           ),
           Expanded(
-              flex: 8,
-              child: Center(
-                  child:
-                      pause ? Pause(timerEnd) : Countdown(seconds, timerEnd))),
+            flex: 8,
+            child: Center(
+              child: pause ? Pause(timerEnd) : Countdown(seconds, timerEnd),
+            ),
+          ),
           Expanded(
             flex: 5,
             child: IconButton(

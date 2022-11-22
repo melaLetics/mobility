@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_timer_countdown/flutter_timer_countdown.dart';
 
 typedef VoidCallback = void Function();
@@ -14,6 +14,8 @@ class Countdown extends StatefulWidget {
 }
 
 class _CountdownState extends State<Countdown> {
+  final player = AudioPlayer();
+
   @override
   void initState() {
     super.initState();
@@ -38,7 +40,8 @@ class _CountdownState extends State<Countdown> {
           fontSize: 50,
           color: Theme.of(context).colorScheme.primary,
         ),
-        onEnd: () {
+        onEnd: () async {
+          await player.play(AssetSource('pip.mp3'));
           widget.timerEnd();
         });
   }
