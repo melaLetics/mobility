@@ -52,8 +52,8 @@ class Navigation extends StatelessWidget {
             flex: 8,
             child: Center(
               child: pause
-                  ? CountdownInterface(5, timerEnd)
-                  : CountdownInterface(seconds, timerEnd),
+                  ? CountdownInterface(5, timerEnd, UniqueKey())
+                  : CountdownInterface(seconds, timerEnd, UniqueKey()),
             ),
           ),
           Expanded(

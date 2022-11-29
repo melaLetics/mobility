@@ -8,7 +8,9 @@ typedef VoidCallback = void Function();
 class CountdownInterface extends StatefulWidget {
   final int seconds;
   final VoidCallback timerEnd;
-  const CountdownInterface(this.seconds, this.timerEnd, {super.key});
+  final Key key;
+  const CountdownInterface(this.seconds, this.timerEnd, this.key)
+      : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _CountdownInterfaceState();
