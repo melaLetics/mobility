@@ -70,7 +70,9 @@ class _CountdownInterfaceState extends State<CountdownInterface> {
                 ),
                 interval: Duration(seconds: 1),
                 onFinished: () async {
-                  await player.play(AssetSource('pip.mp3'));
+                  if (widget.seconds > 5) {
+                    await player.play(AssetSource('pip.mp3'));
+                  }
                   widget.timerEnd();
                 },
               ),
