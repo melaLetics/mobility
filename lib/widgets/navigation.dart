@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobility/widgets/countdown.dart';
-import 'package:mobility/widgets/pause.dart';
+import 'package:mobility/widgets/countdowninterface.dart';
 
 typedef VoidCallback = void Function();
 
@@ -52,7 +51,9 @@ class Navigation extends StatelessWidget {
           Expanded(
             flex: 8,
             child: Center(
-              child: pause ? Pause(timerEnd) : Countdown(seconds, timerEnd),
+              child: pause
+                  ? CountdownInterface(5, timerEnd)
+                  : CountdownInterface(seconds, timerEnd),
             ),
           ),
           Expanded(
