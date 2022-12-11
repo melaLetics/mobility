@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:timer_count_down/timer_controller.dart';
 import 'package:timer_count_down/timer_count_down.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter_beep/flutter_beep.dart';
 
 typedef VoidCallback = void Function();
 
@@ -73,8 +72,7 @@ class _CountdownInterfaceState extends State<CountdownInterface> {
                 interval: const Duration(seconds: 1),
                 onFinished: () async {
                   if (widget.seconds > 5) {
-                    //await player.play(AssetSource('ping.mp3'));
-                    FlutterBeep.beep();
+                    await player.play(AssetSource('tada.mp3'));
                   }
                   widget.timerEnd();
                 },
