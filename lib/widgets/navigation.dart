@@ -38,7 +38,7 @@ class Navigation extends StatelessWidget {
                 Icons.skip_previous,
                 color: enableSkipPrevious
                     ? Colors.grey
-                    : Color.fromARGB(205, 41, 40, 40),
+                    : const Color.fromARGB(205, 41, 40, 40),
               ),
               iconSize: 60,
               onPressed: enableSkipPrevious
@@ -69,7 +69,7 @@ class Navigation extends StatelessWidget {
                       Icons.skip_next,
                       color: enableSkipNext
                           ? Colors.grey
-                          : Color.fromARGB(205, 41, 40, 40),
+                          : const Color.fromARGB(205, 41, 40, 40),
                     ),
               iconSize: 60,
               onPressed: enableSkipNext

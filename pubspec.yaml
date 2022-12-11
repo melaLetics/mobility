@@ -1,5 +1,5 @@
 name: mobility
-description: A new Flutter project.
+description: Generates a random routine for daily mobility.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -39,6 +39,7 @@ dependencies:
   linear_progress_bar: "^1.1.0"
   audioplayers: ^1.1.1
   timer_count_down: ^2.2.1
+  flutter_beep: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +70,7 @@ flutter:
     - assets/data.json
     - assets/boop.mp3
     - assets/pip.mp3
+    - assets/ping.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

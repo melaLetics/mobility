@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-typedef void BooleanCallback(bool val);
+typedef BooleanCallback = void Function(bool val);
 
 class SessionDurationButton extends StatelessWidget {
   const SessionDurationButton(this.description, this.highlighted, this.callback,
@@ -12,7 +12,7 @@ class SessionDurationButton extends StatelessWidget {
 
   ButtonStyle highlightedButtonStyle(context) {
     return ElevatedButton.styleFrom(
-        primary: Color.fromRGBO(1, 203, 203, .3),
+        backgroundColor: const Color.fromRGBO(1, 203, 203, .3),
         side: BorderSide(
           width: 5.0,
           color: Theme.of(context).colorScheme.secondary,
@@ -21,7 +21,7 @@ class SessionDurationButton extends StatelessWidget {
 
   ButtonStyle unselectedButtonStyle(context) {
     return ElevatedButton.styleFrom(
-      primary: Theme.of(context).colorScheme.secondary,
+      backgroundColor: Theme.of(context).colorScheme.secondary,
     );
   }
 

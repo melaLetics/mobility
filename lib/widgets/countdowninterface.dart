@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+
 import 'package:timer_count_down/timer_controller.dart';
 import 'package:timer_count_down/timer_count_down.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter_beep/flutter_beep.dart';
 
 typedef VoidCallback = void Function();
 
 class CountdownInterface extends StatefulWidget {
   final int seconds;
   final VoidCallback timerEnd;
-  final Key key;
-  const CountdownInterface(this.seconds, this.timerEnd, this.key)
-      : super(key: key);
+  final Key myKey;
+  const CountdownInterface(this.seconds, this.timerEnd, this.myKey)
+      : super(key: myKey);
 
   @override
   State<StatefulWidget> createState() => _CountdownInterfaceState();
@@ -68,10 +70,11 @@ class _CountdownInterfaceState extends State<CountdownInterface> {
                     color: Theme.of(context).colorScheme.primary,
                   ),
                 ),
-                interval: Duration(seconds: 1),
+                interval: const Duration(seconds: 1),
                 onFinished: () async {
                   if (widget.seconds > 5) {
-                    await player.play(AssetSource('pip.mp3'));
+                    //await player.play(AssetSource('ping.mp3'));
+                    FlutterBeep.beep();
                   }
                   widget.timerEnd();
                 },

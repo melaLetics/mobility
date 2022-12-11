@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
-
 import 'package:mobility/screens/setup_screen.dart';
-import 'package:mobility/screens/routine_screen.dart';
 
 class App extends StatelessWidget {
   App({super.key});
 
   final Map<int, Color> color = {
-    50: Color.fromRGBO(1, 203, 203, .1),
-    100: Color.fromRGBO(1, 203, 203, .2),
-    200: Color.fromRGBO(1, 203, 203, .3),
-    300: Color.fromRGBO(1, 203, 203, .4),
-    400: Color.fromRGBO(1, 203, 203, .5),
-    500: Color.fromRGBO(1, 203, 203, .6),
-    600: Color.fromRGBO(1, 203, 203, .7),
-    700: Color.fromRGBO(1, 203, 203, .8),
-    800: Color.fromRGBO(1, 203, 203, .9),
-    900: Color.fromRGBO(1, 203, 203, 1),
+    50: const Color.fromRGBO(1, 203, 203, .1),
+    100: const Color.fromRGBO(1, 203, 203, .2),
+    200: const Color.fromRGBO(1, 203, 203, .3),
+    300: const Color.fromRGBO(1, 203, 203, .4),
+    400: const Color.fromRGBO(1, 203, 203, .5),
+    500: const Color.fromRGBO(1, 203, 203, .6),
+    600: const Color.fromRGBO(1, 203, 203, .7),
+    700: const Color.fromRGBO(1, 203, 203, .8),
+    800: const Color.fromRGBO(1, 203, 203, .9),
+    900: const Color.fromRGBO(1, 203, 203, 1),
   };
 
   @override
@@ -29,9 +27,10 @@ class App extends StatelessWidget {
         primarySwatch: colorCustom,
         colorScheme: ColorScheme.fromSwatch().copyWith(
           primary: colorCustom,
-          secondary: Color.fromRGBO(1, 203, 203, 0.5), // Your accent color
+          secondary:
+              const Color.fromRGBO(1, 203, 203, 0.5), // Your accent color
         ),
-        scaffoldBackgroundColor: Color.fromARGB(255, 16, 20, 17),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 16, 20, 17),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
             foregroundColor: MaterialStateProperty.all(Colors.grey),

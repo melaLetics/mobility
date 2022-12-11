@@ -137,7 +137,7 @@ class SetupScreenState extends State<SetupScreen> {
               height: 80,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Theme.of(context).colorScheme.secondary,
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
                 ),
                 onPressed: () async {
                   List<Exercise> routine =

@@ -32,7 +32,7 @@ class _RoutineScreenState extends State<RoutineScreen> {
   }
 
   int getNumberOfExercises() {
-    var seen = Set<String>();
+    var seen = <String>{};
     List<Exercise> unique =
         widget.exercises.where((elem) => seen.add(elem.id)).toList();
     return unique.length;

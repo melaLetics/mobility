@@ -16,8 +16,8 @@ class ShowExercise extends StatelessWidget {
                 (item) => Row(
                   children: [
                     const Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                      child: const Icon(Icons.check_circle_sharp),
+                      padding: EdgeInsets.symmetric(horizontal: 5.0),
+                      child: Icon(Icons.check_circle_sharp),
                     ),
                     Text(
                       item,
