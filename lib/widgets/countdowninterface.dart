@@ -72,7 +72,8 @@ class _CountdownInterfaceState extends State<CountdownInterface> {
                 interval: const Duration(seconds: 1),
                 onFinished: () async {
                   if (widget.seconds > 5) {
-                    await player.play(AssetSource('tada.mp3'));
+                    await player.play(AssetSource('tada.mp3'),
+                        mode: PlayerMode.lowLatency);
                   }
                   widget.timerEnd();
                 },
