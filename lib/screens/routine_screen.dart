@@ -95,7 +95,7 @@ class _RoutineScreenState extends State<RoutineScreen> {
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
-                color: Colors.grey,
+                color: Colors.white,
               )),
           centerTitle: true,
         ),

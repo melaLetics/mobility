@@ -38,7 +38,7 @@ class SetupScreenState extends State<SetupScreen> {
             style: TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.bold,
-              color: Colors.grey,
+              color: Colors.white,
             )),
         centerTitle: true,
       ),
