@@ -39,6 +39,7 @@ dependencies:
   linear_progress_bar: "^1.1.0"
   audioplayers: ^1.1.1
   timer_count_down: ^2.2.1
+  wakelock: ^0.6.2
 
 dev_dependencies:
   flutter_test:

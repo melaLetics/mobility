@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wakelock/wakelock.dart';
 import 'package:mobility/model/exercise.dart';
 import 'package:mobility/widgets/navigation.dart';
 import 'package:mobility/widgets/progress.dart';
@@ -29,6 +30,13 @@ class _RoutineScreenState extends State<RoutineScreen> {
     total = getNumberOfExercises();
     lastId = widget.exercises[0].id;
     super.initState();
+    Wakelock.enable();
+  }
+
+  @override
+  void dispose() {
+    Wakelock.disable();
+    super.dispose();
   }
 
   int getNumberOfExercises() {
@@ -42,6 +50,9 @@ class _RoutineScreenState extends State<RoutineScreen> {
     setState(() {
       actual++;
     });
+    if (actual == widget.exercises.length - 1) {
+      setOnEnd();
+    }
     if (widget.exercises[actual].id != lastId) {
       setState(() {
         lastId = widget.exercises[actual].id;
@@ -122,18 +133,16 @@ class _RoutineScreenState extends State<RoutineScreen> {
                 }
               },
               () {
-                if (actual < widget.exercises.length - 1) {
+                if (!onEnd) {
                   stepForward();
                 } else {
-                  if (!onEnd) {
-                    setOnEnd();
-                  } else {
-                    Navigator.pushReplacementNamed(context, '/setup');
-                  }
+                  Navigator.pushReplacementNamed(context, '/setup');
                 }
               },
               () {
-                onTimerEnd();
+                if (!onEnd) {
+                  onTimerEnd();
+                }
               },
             ),
           ],
