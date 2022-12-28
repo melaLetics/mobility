@@ -72,7 +72,7 @@ class Navigation extends StatelessWidget {
                           : const Color.fromARGB(205, 41, 40, 40),
                     ),
               iconSize: 60,
-              onPressed: enableSkipNext
+              onPressed: enableSkipNext || isEnd
                   ? () {
                       forwards();
                     }

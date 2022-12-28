@@ -140,7 +140,7 @@ class _RoutineScreenState extends State<RoutineScreen> {
                 }
               },
               () {
-                if (!onEnd) {
+                if (isPause || !onEnd) {
                   onTimerEnd();
                 }
               },
