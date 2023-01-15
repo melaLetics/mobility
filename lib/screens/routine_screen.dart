@@ -98,6 +98,51 @@ class _RoutineScreenState extends State<RoutineScreen> {
     togglePause();
   }
 
+  Future<String?> cancelDialog(BuildContext context) {
+    Widget boldText(String text) {
+      return Text(
+        text,
+        style: const TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+        ),
+      );
+    }
+
+    final simple = SimpleDialog(
+      title: const Text(
+        "Routine wirklich abbrechen?",
+        style: TextStyle(
+          fontSize: 22,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            SimpleDialogOption(
+              child: boldText('Ja'),
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, '/setup');
+              },
+            ),
+            SimpleDialogOption(
+              child: boldText('Nein'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        ),
+      ],
+    );
+    return showDialog(
+      context: context,
+      builder: (context) => simple,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -110,42 +155,49 @@ class _RoutineScreenState extends State<RoutineScreen> {
               )),
           centerTitle: true,
         ),
-        body: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const SizedBox(height: 50),
-            Progress(count, total),
-            const SizedBox(height: 50),
-            ShowExercise(widget.exercises[actual].description,
-                widget.exercises[actual].instruction),
-            const SizedBox(height: 20),
-            Stimulus(widget.exercises[actual].stimulus),
-            const SizedBox(height: 50),
-            Navigation(
-              widget.exercises[actual].duration[0],
-              onEnd,
-              isPause,
-              actual > 0 && !isPause,
-              !isPause,
-              () {
-                if (actual > 0) {
-                  stepBack();
-                }
-              },
-              () {
-                if (!onEnd) {
-                  stepForward();
-                } else {
-                  Navigator.pushReplacementNamed(context, '/setup');
-                }
-              },
-              () {
-                if (isPause || !onEnd) {
-                  onTimerEnd();
-                }
-              },
-            ),
-          ],
+        body: GestureDetector(
+          onPanUpdate: (details) {
+            if (details.delta.dx < 0) {
+              cancelDialog(context);
+            }
+          },
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const SizedBox(height: 50),
+              Progress(count, total),
+              const SizedBox(height: 50),
+              ShowExercise(widget.exercises[actual].description,
+                  widget.exercises[actual].instruction),
+              const SizedBox(height: 20),
+              Stimulus(widget.exercises[actual].stimulus),
+              const SizedBox(height: 50),
+              Navigation(
+                widget.exercises[actual].duration[0],
+                onEnd,
+                isPause,
+                actual > 0 && !isPause,
+                !isPause,
+                () {
+                  if (actual > 0) {
+                    stepBack();
+                  }
+                },
+                () {
+                  if (!onEnd) {
+                    stepForward();
+                  } else {
+                    Navigator.pushReplacementNamed(context, '/setup');
+                  }
+                },
+                () {
+                  if (isPause || !onEnd) {
+                    onTimerEnd();
+                  }
+                },
+              ),
+            ],
+          ),
         ));
   }
 }
